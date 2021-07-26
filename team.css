@@ -29,14 +29,20 @@ a[idea] {
 	padding: 7.5px 10px;
 	border-radius: 10px;
 	text-align: center;
-	background-color: rgba(63, 150, 249, 0.8);
+	background-color: rgb(86, 160, 245);
 	margin: 1rem 0;
 	transition: background-color 0.3s;
 }
 
 a[idea]:hover,
-a[idea]:active {
-	background-color: rgba(42, 96, 158, 0.8);
+a[idea]:active,.card:hover .color{
+	background-color: rgb(83, 83, 83);
+    transition:0.5s;
+    color: rgb(233, 233, 233);
+}
+
+.card:hover .color h1{
+color: white;
 }
 
 li {
@@ -173,7 +179,7 @@ img[src="img/internwell.png"] {
 }
 
 .color {
-	background-color: rgba(76, 0, 255, 0.5);
+	background-color:rgb(86,160,245);
 	padding: 10px;
 }
 

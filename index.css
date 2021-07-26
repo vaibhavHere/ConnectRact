@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
 	min-height: 80vh;
 	overflow: hidden;
 	width: 80vw;
@@ -78,7 +78,7 @@ h2 {
 	flex: 1 0 50%;
 	display: flex;
 	flex-direction: column;
-    background-color:rgba(255, 255, 255, 0);
+    background-color:rgb(255, 255, 255);
 	justify-content: space-evenly;
 	padding: 0 5%;
 	transition: transform 0.7s;
@@ -87,9 +87,10 @@ h2 {
 input {
 	border: none;
 	border-radius: 10px;
-	background-color:rgb(255, 255, 255);
+	background-color:rgb(240, 244, 243);
 	padding: 10px 1ch;
 	width: 100%;
+    color: black;
 	outline: none;
 }
 
@@ -101,14 +102,14 @@ input[type="submit"] {
 	padding: 7.5px;
 	border-radius: 10px;
 	text-align: center;
-	background-color: rgba(63, 150, 249, 0.8);
+	background-color: rgb(86, 160, 245);
 	margin: 1rem 0;
 	transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover,
 input[type="submit"]:active {
-	background-color: rgba(42, 96, 158, 0.8);
+	background-color: rgb(58, 103, 153);
 }
 
 span {

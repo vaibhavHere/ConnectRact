@@ -8,6 +8,7 @@
 body {
 	background-color: rgb(240, 244, 243);
 	user-select: none;
+    display: none;
 	overflow-x: hidden;
 }
 
@@ -29,14 +30,14 @@ a[idea] {
 	padding: 7.5px 10px;
 	border-radius: 10px;
 	text-align: center;
-	background-color: rgba(63, 150, 249, 0.8);
+	background-color: rgb(86, 160, 245);
 	margin: 1rem 0;
 	transition: background-color 0.3s;
 }
 
 a[idea]:hover,
 a[idea]:active {
-	background-color: rgba(42, 96, 158, 0.8);
+	background-color: rgb(83, 83, 83);
 }
 
 li {
@@ -220,7 +221,6 @@ footer h6 {
 	}
 	#demo {
 		font-size: 1.5rem;
-		/* letter-spacing: .15em; */
 	}
 }
 
