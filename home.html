@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <!-- Pre-rendering images for smooth transistion -->
+    <img src="1.jpg" hide>
+    <img src="2.jpg" hide>
+    <img src="3.jpg" hide>
+    <img src="4.jpg" hide>
+    <img src="5.jpg" hide>
     <header>
         <h1><a href="home.html">ConnectRact</a></h1>
         <div id="burger">
@@ -33,7 +39,7 @@
         <a href="ConnectRact.pdf" idea><i class="fa fa-download" aria-hidden="true"></i> Our Ideation</a>
     </header>
     <section>
-        <div class="section1">
+        <div class="section1" id="main">
             <span id="demo"></span>
         </div>
     </section>
@@ -49,6 +55,7 @@
         nav.classList.toggle('move')
     }
     window.onload = () => {
+        main.classList.add('animate')
         var i = 0;
         var txt = 'Connect && Interact';
         function typeWriter() {

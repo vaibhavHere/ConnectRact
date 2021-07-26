@@ -8,12 +8,15 @@
 body {
 	background-color: rgb(240, 244, 243);
 	user-select: none;
-    display: none;
 	overflow-x: hidden;
 }
 
+[hide]{
+    display: none;
+}
+
 ul {
-	display: flex;
+	display: flex !important;
 	font-size: 1rem;
 	align-items: center;
 	transition: 0.5s;
@@ -113,13 +116,16 @@ ul>a {
 }
 
 .section1 {
-	background-image: linear-gradient(rgba(0, 0, 0), black), url(img/1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), black), url(img/1.jpg);
 	background-position: center;
 	background-size: cover;
 	min-height: 100vh;
 	display: grid;
 	place-items: center;
 	width: 100vw;
+}
+
+.animate{
 	animation: change 10s infinite alternate;
 }
 
@@ -219,9 +225,10 @@ footer h6 {
 	header {
 		height: 3.5rem;
 	}
-	#demo {
-		font-size: 1.5rem;
-	}
+    #demo {
+        font-size: 1.75rem;
+    }
+	
 }
 
 @media screen and (max-width:375px) {
@@ -236,4 +243,7 @@ footer h6 {
 		text-align: center;
 		width: min-content;
 	}
+    #demo {
+        font-size: 1.5rem;
+    }
 }   
