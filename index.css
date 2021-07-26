@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: rgb(240, 244, 243);
+	user-select: none;
+}
+
+.main {
+	min-height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0);
+	min-height: 80vh;
+	overflow: hidden;
+	width: 80vw;
+	z-index: 1;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.13);
+}
+
+.message-box {
+	z-index: 2;
+	flex: 1 0 50%;
+	background-image: linear-gradient(to bottom right, rgba(63, 150, 249), #6dd5ed);
+	text-align: center;
+	display: grid;
+	border-radius: 10px 0 0 10px;
+	place-items: center;
+}
+
+.inner {
+	height: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.message {
+	width: 70%;
+}
+
+h4 {
+	color: rgb(255, 255, 255);
+	color: black;
+}
+
+p {
+	color: rgb(61, 61, 61);
+}
+
+.message p {
+	color: rgb(255, 255, 255);
+}
+
+h2 {
+	font-weight: 600;
+}
+
+.logo {
+	color: white;
+    font-weight: 500;
+	background-color: black;
+}
+
+#login,
+#signup {
+	flex: 1 0 50%;
+	display: flex;
+	flex-direction: column;
+    background-color:rgba(255, 255, 255, 0);
+	justify-content: space-evenly;
+	padding: 0 5%;
+	transition: transform 0.7s;
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+	background-color:rgb(255, 255, 255);
+	padding: 10px 1ch;
+	width: 100%;
+	outline: none;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	color: white;
+	font-size: 1rem;
+	width: 100%;
+	padding: 7.5px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgba(63, 150, 249, 0.8);
+	margin: 1rem 0;
+	transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+	background-color: rgba(42, 96, 158, 0.8);
+}
+
+span {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.circle {
+	height: 50vh;
+	width: 50vh;
+	background-color: #F9C73F;
+	position: fixed;
+	border-radius: 50%;
+	bottom: 0;
+	transform: translate(-30%, 30%);
+}
+
+.rect {
+	height: 50vh;
+	width: 50vh;
+	background-color: rgb(227, 94, 106);
+	position: fixed;
+	right: 0;
+	transform: translate(30%, -30%);
+}
+
+#shift,
+#unshift {
+	color: rgb(0, 81, 255);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+	.container {
+		margin: 20vh 0;
+		height: 90%;
+		flex-direction: column;
+	}
+	#login {
+		padding: 0 10%;
+	}
+	.inner {
+		padding: 0 10px;
+		height: 80%;
+	}
+}
+
+@media screen and (max-width:375px) {
+	#shift {
+		display: block;
+	}
+}

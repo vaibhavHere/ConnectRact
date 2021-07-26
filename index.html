@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>ConnectRact - Login</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle"></div>
+        <div class="rect"></div>
+        <div class="container">
+            <div class="message-box">
+                <div class="inner">
+                    <div class="message">
+                        <p>Welcome and greetings!<br>We're happy to have you onboard here!</p>
+                    </div>
+                    <div>
+                        <h1 class="logo">ConnectRact</h1>
+                        <h4>Breaking the ice starts by asking..</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div id="login">
+                <div>
+                    <h2>Hello!
+                        <span>Welcome Back<span>
+                    </h2>
+                    <p>Log in now and start interactin' right away.</p>
+                </div>
+                <div>
+                    <form action="home.html">
+                        <label>Email<br><input type="email" required></label>
+                        <label>Password<br><input type="password" required></label>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+                <span>
+                    <p>Don't have an account? <span id="shift">Sign Up</span></p>
+                </span>
+
+            </div>
+            <div id="signup">
+                <div>
+                    <h2>Hey, There!<span></h2>
+                    <p>Let's fire up the interaction.</p>
+                </div>
+                <form action="home.html">
+                    <div><label>Name<br><input type="search" required><label></div>
+                    <div><label>University<br><input list="univs" required>
+                            <datalist id="univs">
+                                <option value="Indian Institute of Technology (IIT), Madras">
+                                <option value="National Institute of Technology (NIT), Trichy">
+                                <option value="SRM University, Delhi">
+                                <option value="Delhi Technical University, DTU">
+                                <option value="Sant Longowal Institute of Engineering & Technology (SLIET), Punjab">
+                            </datalist><label>
+                    </div>
+                    <div class="email"><label>Email<br><input type="email" required><label></div>
+                    <div class="passwd"><label>Password<br><input type="password" required><label></div>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <span>
+                    <p>Already a member? <span id="unshift">Log In</span></p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    shift.onclick = () => {
+        signup.style.transform = "translate(-100%)"
+        login.style.transform = "translate(0,-100%)"
+        if (window.innerWidth <= 768) {
+            signup.style.transform = "translate(0,-100%)"
+            login.style.transform = "translate(-100%)"
+        }
+    }
+    unshift.onclick = () => {
+        signup.style.transform = "translate(0)"
+        login.style.transform = "translate(0)"
+    }
+</script>
+
+</html>
